@@ -19,7 +19,8 @@ namespace API.Controllers
             _context = context;
         }
 
-        [HttpGet]/* attribute that will get the resource from the API Endpoint this below method is a public endpoint to get all users from the Users table*/
+        [HttpGet]
+        /* attribute that will get the resource from the API Endpoint this below method is a public endpoint to get all users from the Users table*/
 
         public async Task<ActionResult<IEnumerable<AppUser>>> GetUsers()
         {
